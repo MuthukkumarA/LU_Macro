@@ -1,0 +1,40 @@
+****************************************
+ Report : check_design
+ Options: { pre_placement_stage }
+ Design : msrv32_lu
+ Version: T-2022.03-SP4
+ Date   : Thu Feb 27 16:44:22 2025
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: T-2022.03-SP4
+Date   : Thu Feb 27 16:44:22 2025
+****************************************
+No mismatches exist on the design.
+1
+1
+Information: There are no relative placement groups in the design. (NDMUI-173)
+1
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  TCK-001      Warn   64         The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-002      Warn   32         The register clock pin '%pin' has no fanin clocks. Mode:'%mode'.
+  TCK-012      Warn   38         The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 135 EMS messages : 0 errors, 134 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+     NDMUI-173   Info          1 There are no relative placement groups in the design.
+  ----------------------------------------------------------------------------------------------------
+  Total 1 non-EMS messages : 0 errors, 0 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------

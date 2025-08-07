@@ -1,0 +1,27 @@
+#@ # 
+#@ # Running lm_shell Version V-2023.12-SP4 for linux64 -- Jun 03, 2024
+#@ # Date:   Thu Feb 27 16:52:54 2025
+#@ # Run by: AMuthuKKumar@mavenserver-RH3
+#@ 
+
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+create_workspace -tech ../../../ref/tech/saed32nm_1p9m.tf -flow normal LU_workspace
+read_gds ../Inputs/LU.gds
+set_attribute [get_lib_cells Load_Unit] design_type macro
+set_attribute [get_lib_cells msrv32_lu] design_type macro
+check_workspace
+commit_workspace -output LU_workspace.ndm
+open_lib LU_workspace.ndm
+open_block msrv32_lu.frame
+win_set_filter -visible -class cell -filter {assembly_die_margin bridge clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin substrate} -layer {}
+win_set_filter -visible -class pseudo_bump -filter {deleted} -layer {}
+win_set_filter -visible -class pseudo_tsv -filter {deleted} -layer {}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell metal_area metal_area_hole placement_blockage }
+win_set_filter -class cell -filter {array assembly_die_margin bridge clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin substrate} -layer {}
+win_set_filter -class pseudo_bump -filter {deleted} -layer {}
+win_set_filter -class pseudo_tsv -filter {deleted} -layer {}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via metal_area metal_area_hole placement_blockage }
+exit

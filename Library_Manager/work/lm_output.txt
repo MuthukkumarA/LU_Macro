@@ -1,0 +1,326 @@
+ 
+                              Library Manager (TM)
+
+                Version V-2023.12-SP4 for linux64 - Jun 03, 2024
+                           Base build date 2024/05/13
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+create_workspace -tech ../../../ref/tech/saed32nm_1p9m.tf -flow normal LU_workspace
+Information: Loading technology file '/home1/PD07/AMuthuKKumar/VLSI_PD/Project/Macro/ref/tech/saed32nm_1p9m.tf' (FILE-007)
+... created workspace LU_workspace
+read_gds ../Inputs/LU.gds
+Running read_gds
+        Command Options:
+                Library Name                            None
+                Layer Map                               None
+                Block Map                               None
+                Merge Action                            add
+                Keep Text Boxes                         No
+                Trace Connectivity Option               Auto
+                Trace Connectivity Limit                None
+                Net Property                            None
+                Cell Property                           None
+                Pin Property                            None
+                Via Property                            None
+                ASCII File                              None
+                Verbose                                 No
+                Centerline Boundary                     Disabled
+                Mask Fixed                              False
+                Layer Map Format                        ICC2
+                Files Read                              /home1/PD07/AMuthuKKumar/VLSI_PD/Project/Macro/LU_Macro/Library_Manager/Inputs/LU.gds
+
+        Application Settings:
+                file.gds.create_custom_via              false
+                file.gds.exclude_layers                 none
+                file.gds.port_type_map                  none
+                file.gds.text_layer_map                 none
+                file.gds.trace_unmapped_text            false
+                file.gds.trace_terminal_text                    none
+                file.gds.trace_terminal_length_4x_width                 none
+                file.gds.trace_terminal_length_exclude_list                     none
+                file.gds.trace_terminal_length_layer_pairs                      none
+                file.gds.trace_terminal_length          0.000000
+                file.gds.trace_terminal_type            unset
+                file.gds.trace_terminal_length_layers                   none
+                file.gds.trace_copy_overlap_shape_from_sub_cell         false
+                file.gds.trace_net_after_flattening             false
+                file.gds.trace_terminal_length_boundary_only            false
+                file.gds.trace_merge_overlap_mask               false
+                file.gds.use_only_mapped_text           false
+
+-------------------------------------------------------------
+
+Information: Loading GDS file '/home1/PD07/AMuthuKKumar/VLSI_PD/Project/Macro/LU_Macro/Library_Manager/Inputs/LU.gds' (FILE-007)
+Information: Translating structure 'msrv32_lu' as cell 'Load_Unit.dlib/msrv32_lu'. (GDS-050)
+Information: Translating structure '$$VIA56LG_C_1860_1860_5_5_0' as cell 'Load_Unit.dlib/$$VIA56LG_C_1860_1860_5_5_0'. (GDS-050)
+Information: Translating structure '$$VIA56LG_C_1860_1860_5_1_0' as cell 'Load_Unit.dlib/$$VIA56LG_C_1860_1860_5_1_0'. (GDS-050)
+Information: Translating structure '$$VIA56LG_C_1860_1860_1_5_0' as cell 'Load_Unit.dlib/$$VIA56LG_C_1860_1860_1_5_0'. (GDS-050)
+Information: Translating structure '$$VIA23SQ_C_1200_1200_8_1_0' as cell 'Load_Unit.dlib/$$VIA23SQ_C_1200_1200_8_1_0'. (GDS-050)
+Information: Translating structure '$$VIA34SQ_C_1200_1200_8_1_0' as cell 'Load_Unit.dlib/$$VIA34SQ_C_1200_1200_8_1_0'. (GDS-050)
+Information: Translating structure '$$VIA45BAR_C_1360_1860_5_1_0' as cell 'Load_Unit.dlib/$$VIA45BAR_C_1360_1860_5_1_0'. (GDS-050)
+Information: Translating structure '$$VIA56LG_C' as cell 'Load_Unit.dlib/$$VIA56LG_C'. (GDS-050)
+Information: Translating structure '$$VIA23SQ_C' as cell 'Load_Unit.dlib/$$VIA23SQ_C'. (GDS-050)
+Information: Translating structure '$$VIA34SQ_C' as cell 'Load_Unit.dlib/$$VIA34SQ_C'. (GDS-050)
+Information: Translating structure '$$VIA45BAR_C' as cell 'Load_Unit.dlib/$$VIA45BAR_C'. (GDS-050)
+Information: Translating structure '$$VIA12SQ_C' as cell 'Load_Unit.dlib/$$VIA12SQ_C'. (GDS-050)
+Information: Translating structure '$$VIA12BAR_C' as cell 'Load_Unit.dlib/$$VIA12BAR_C'. (GDS-050)
+Information: Translating structure '$$VIA45SQ_C' as cell 'Load_Unit.dlib/$$VIA45SQ_C'. (GDS-050)
+Information: Read GDSII into a new library 'Load_Unit.dlib'. (GDS-021)
+
+-------------------------------------------------------------
+
+Cell Statistics
+              Rectangles        Polygons           Paths      Cut Shapes          Arrays            Text       Instances        Cell Name
+                      73               0            1043               0               0              73            1123        msrv32_lu
+                       2               0               0              25               0               0               0        $$VIA56LG_C_1860_1860_5_5_0
+                       2               0               0               5               0               0               0        $$VIA56LG_C_1860_1860_5_1_0
+                       2               0               0               5               0               0               0        $$VIA56LG_C_1860_1860_1_5_0
+                       2               0               0               8               0               0               0        $$VIA23SQ_C_1200_1200_8_1_0
+                       2               0               0               8               0               0               0        $$VIA34SQ_C_1200_1200_8_1_0
+                       2               0               0               5               0               0               0        $$VIA45BAR_C_1360_1860_5_1_0
+                       2               0               0               1               0               0               0        $$VIA56LG_C
+                       2               0               0               1               0               0               0        $$VIA23SQ_C
+                       2               0               0               1               0               0               0        $$VIA34SQ_C
+                       2               0               0               1               0               0               0        $$VIA45BAR_C
+                       2               0               0               1               0               0               0        $$VIA12SQ_C
+                       2               0               0               1               0               0               0        $$VIA12BAR_C
+                       2               0               0               1               0               0               0        $$VIA45SQ_C
+
+Layer Statistics
+            Layer Number        Datatype        Polygons      Cut Shapes           Paths      Rectangles            Text
+                      11               0               0               0             117               2               0
+                      12               0               0               2               0               0               0
+                      13               0               0               0             556              41              37
+                      14               0               0               9               0               0               0
+                      15               0               0               0             308              38              34
+                      16               0               0               9               0               0               0
+                      17               0               0               0              40               5               0
+                      18               0               0               7               0               0               0
+                      19               0               0               0              13               8               1
+                      20               0               0              36               0               0               0
+                      21               0               0               0               9               5               1
+
+Object Summary
+        Instances                                   1123
+        Cut Shapes                                    63
+        Arrays                                         0
+        Polygons                                       0
+        Paths                                       1043
+        Rectangles                                    99
+        Text                                          73
+        Cells                                         14
+        Skipped Zero-Area Polygons                     0
+
+-------------------------------------------------------------
+Warning: Library Load_Unit.dlib has no reference libraries. (LNK-063)
+Using libraries: Load_Unit.dlib
+Visiting block Load_Unit.dlib:msrv32_lu.design
+Linking block Load_Unit.dlib:LATCHX1_HVT.design
+Linking block Load_Unit.dlib:AO22X1_HVT.design
+Linking block Load_Unit.dlib:NAND2X0_HVT.design
+Linking block Load_Unit.dlib:NOR3X0_HVT.design
+Linking block Load_Unit.dlib:INVX0_HVT.design
+Linking block Load_Unit.dlib:OAI21X2_HVT.design
+Linking block Load_Unit.dlib:AO21X1_HVT.design
+Linking block Load_Unit.dlib:NAND3X0_HVT.design
+Linking block Load_Unit.dlib:AOI22X1_HVT.design
+Linking block Load_Unit.dlib:OR2X1_HVT.design
+Linking block Load_Unit.dlib:AO222X1_HVT.design
+Linking block Load_Unit.dlib:OA21X1_HVT.design
+Linking block Load_Unit.dlib:AO221X1_HVT.design
+Linking block Load_Unit.dlib:AND3X1_HVT.design
+Linking block Load_Unit.dlib:INVX4_HVT.design
+Linking block Load_Unit.dlib:INVX2_HVT.design
+Linking block Load_Unit.dlib:AND2X2_HVT.design
+Expanding block Load_Unit.dlib:msrv32_lu.design
+Design 'msrv32_lu' was successfully linked.
+Warning: The Application option "file.gds.port_type_map" is notdefined before "read_gds" command. (GDS-022)
+{Load_Unit.dlib}
+set_attribute [get_lib_cells Load_Unit] design_type macro
+Warning: No lib_cell objects matched 'Load_Unit' (SEL-004)
+set_attribute [get_lib_cells msrv32_lu] design_type macro
+{Load_Unit.dlib/msrv32_lu/design}
+check_workspace
+Information: The command 'check_workspace' cleared the undo history. (UNDO-016)
+Checking libraries...
+Information: Copied 1 physical design (LM-050)
+Warning:  Direction for port load_size_in[1] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port load_size_in[0] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port clk_in on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port load_unsigned_in on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[31] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[30] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[29] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[28] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[27] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[26] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[25] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[24] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[23] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[22] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[21] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[20] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[19] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[18] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[0] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port iadder_1_to_0_in[1] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port iadder_1_to_0_in[0] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port ahb_resp_in on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[31] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[30] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[29] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[28] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[27] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[26] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[25] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[24] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[23] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[22] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[21] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[20] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[19] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[18] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[17] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[17] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[16] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[15] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[14] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[13] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[12] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[11] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[10] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[9] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[8] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[7] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[6] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[5] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[4] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[3] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[2] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port data_in[1] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[16] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[15] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[14] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[13] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[12] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[11] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[10] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[9] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[8] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[7] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[6] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[5] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[4] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[3] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[2] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[1] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port lu_output[0] on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port VDD on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+Warning:  Direction for port VSS on LU_workspace/msrv32_lu/design is changed from unknown to in (LM-055)
+... creating frames for LU_workspace
+Information: Block msrv32_lu.frame, the feature of blocking core area is set on specific layers. New zero-spacing routing blockages and RC metal are added on layers: M1 M2 M3 M4 M5 M6. (FRAM-045)
+Information: Block msrv32_lu.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: PO M1 M2 M3 M4 M5 M6 M7 M8 M9 MRDL NWELL. (FRAM-046)
+... created 1 frames
+Warning: Bus property only exist in frame view msrv32_lu/data_in[31]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[30]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[29]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[28]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[27]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[26]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[25]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[24]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[23]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[22]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[21]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[20]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[19]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[18]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[17]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[16]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[15]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[14]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[13]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[12]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[11]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[10]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[9]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[8]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[7]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[6]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[5]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[4]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[3]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[2]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[1]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/data_in[0]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/iadder_1_to_0_in[1]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/iadder_1_to_0_in[0]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/load_size_in[1]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/load_size_in[0]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[31]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[30]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[29]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[28]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[27]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[26]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[25]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[24]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[23]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[22]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[21]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[20]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[19]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[18]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[17]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[16]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[15]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[14]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[13]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[12]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[11]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[10]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[9]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[8]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[7]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[6]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[5]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[4]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[3]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[2]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[1]. (LM-095)
+Warning: Bus property only exist in frame view msrv32_lu/lu_output[0]. (LM-095)
+
+Workspace check succeeded!
+commit_workspace -output LU_workspace.ndm
+... wrote LU_workspace.ndm
+... removing library 'Load_Unit.dlib'
+... lib workspace removed!
+open_lib LU_workspace.ndm
+Information: Loading library file '/home1/PD07/AMuthuKKumar/VLSI_PD/Project/Macro/LU_Macro/Library_Manager/work/LU_workspace.ndm' (FILE-007)
+Information: Library is effectively read-only. (LMUI-027)
+{LU_workspace}
+open_block msrv32_lu.frame
+Information: Incrementing open_count of block 'LU_workspace:msrv32_lu.frame' to 2. (DES-021)
+{LU_workspace:msrv32_lu.frame}
+lm_shell> exit
+Maximum memory usage for this session: 157.55 MB
+CPU usage for this session:      6 seconds (  0.00 hours)
+Elapsed time for this session:    477 seconds (  0.13 hours)
+Thank you for using Library Manager.
+

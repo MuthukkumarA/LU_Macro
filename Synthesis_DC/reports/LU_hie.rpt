@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : hierarchy
+Design : msrv32_lu
+Version: T-2022.03-SP4
+Date   : Thu Feb 27 16:09:50 2025
+****************************************
+
+msrv32_lu
+    AND2X4_LVT          saed32lvt_ss0p95v125c
+    AND3X2_LVT          saed32lvt_ss0p95v125c
+    AO21X1_LVT          saed32lvt_ss0p95v125c
+    AO22X1_LVT          saed32lvt_ss0p95v125c
+    AO221X2_LVT         saed32lvt_ss0p95v125c
+    AO222X1_LVT         saed32lvt_ss0p95v125c
+    AOI22X1_LVT         saed32lvt_ss0p95v125c
+    INVX1_LVT           saed32lvt_ss0p95v125c
+    INVX2_LVT           saed32lvt_ss0p95v125c
+    INVX4_LVT           saed32lvt_ss0p95v125c
+    INVX8_LVT           saed32lvt_ss0p95v125c
+    LATCHX1_LVT         saed32lvt_ss0p95v125c
+    NAND2X0_LVT         saed32lvt_ss0p95v125c
+    NAND2X4_LVT         saed32lvt_ss0p95v125c
+    NAND3X0_LVT         saed32lvt_ss0p95v125c
+    NBUFFX4_LVT         saed32lvt_ss0p95v125c
+    NOR3X0_LVT          saed32lvt_ss0p95v125c
+    OA21X2_LVT          saed32lvt_ss0p95v125c
+    OAI21X2_LVT         saed32lvt_ss0p95v125c
+    OR2X1_LVT           saed32lvt_ss0p95v125c
+1

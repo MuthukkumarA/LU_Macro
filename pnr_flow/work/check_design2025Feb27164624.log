@@ -1,0 +1,180 @@
+****************************************
+ Report : check_design
+ Options: { pre_route_stage }
+ Design : msrv32_lu
+ Version: T-2022.03-SP4
+ Date   : Thu Feb 27 16:46:24 2025
+****************************************
+
+****************************************
+Report : Data Mismatches
+Version: T-2022.03-SP4
+Date   : Thu Feb 27 16:46:24 2025
+****************************************
+No mismatches exist on the design.
+1
+1
+1
+
+=========================================================
+==     Check for global route app-option  ==
+=========================================================
+
+>>> The option values are suggested.
+
+Warning: Layer MRDL does not have a preferred direction, assigning to vertical. (ZRT-025)
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M6
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+============================================
+==  Check for design                      ==
+============================================
+
+>>> No net contains a large number of ports 
+
+>>> No port contains a large number of pins 
+
+
+================================
+==  Check for PG DPT on Track ==
+================================
+>>>>>> Number of PG rails cross even number of track: 0
+
+============================================
+==  Check for PG PreRoute setting         ==
+============================================
+ No number_of_secondary_pg_pin_connections setting and skip checking 
+ 
+============================================
+==  Check for overlap of standard cells   ==
+============================================
+
+>>>>>> No overlap of standard cells found
+
+============================================
+==     Check for min-grid violations      ==
+============================================
+
+>>>>>> No min-grid violations found
+
+
+============================================
+==    Check for out-of-boundary ports     ==
+============================================
+
+>>>>>> No out-of-boundary error found
+
+============================================
+==        Check for blocked ports         ==
+============================================
+
+>>>>>> No blocked ports found
+
+>>>>>> No blocked nets found
+
+============================================
+==     Check for shielding violations     ==
+============================================
+
+>>>>>> The following Non-PG net has a shape with shape_use shield_route
+
+>>> No non-PG net has a shape with shape_use shield_route.
+
+>>>>>> The following PG net has shape with shape_use detail_route and shape length is too long.
+
+>>> No PG net has shape with shape_use detail_route and shape length is too long.
+
+>>>>>> The following nets with shield non-default rule has no internal data representation in Zroute.
+
+>>> No nets with shield non-default rule has no internal data representation in Zroute.
+
+============================================
+==     Check for via cut blockage violation   ==
+============================================
+
+>>>>>> The following via cut blockages are wrongly treated as real vias.
+
+>>> No via cut blockage is wrongly treated as real via.
+
+============================================
+==     Check for custom via definition    ==
+============================================
+
+>>> No custom via definition has too many cuts
+
+============================================
+==          Check for via master          ==
+============================================
+
+>>> The total number of via master definition is 301
+
+===============================================
+==     Check non-default rule setting        ==
+===============================================
+
+>>> No NDR width is larger than signalRouteMaxWidth
+
+>>> No NDR shield width is larger than signalRouteMaxWidth
+
+======================================================
+==     Check redundant duplicated PG shapes         ==
+======================================================
+
+>>> No redundant duplicated PG shapes overlap with each other.
+
+===========================================================
+==     Check library cell has non-routing layer pins     ==
+===========================================================
+
+>>> No cell has non-routing layer pins to be connected.
+
+============================================
+==     Check over promoted nets           ==
+============================================
+
+>>> No over promoted nets.
+
+End of check_routability
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  TCK-001      Warn   64         The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-002      Warn   32         The register clock pin '%pin' has no fanin clocks. Mode:'%mode'.
+  TCK-012      Warn   38         The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 135 EMS messages : 0 errors, 134 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+       ZRT-022   Warn          1 Cannot find a default contact code for layer %s.
+       ZRT-025   Warn          1 Layer %s does not have a preferred direction, assigning to %s.
+       ZRT-619   Info          1 Via ladder engine would be activated for pattern must join conne...
+       ZRT-703   Info          1 Option route.detail.force_end_on_preferred_grid will be ignored ...
+       ZRT-706   Info          1 When applicable layer based tapering will taper up to %.2f in di...
+       ZRT-707   Info          1 When applicable Min-max layer allow_pin_connection mode will all...
+       ZRT-718   Info          1 When applicable Min-max layer allow_pin_connection mode will all...
+  ----------------------------------------------------------------------------------------------------
+  Total 7 non-EMS messages : 0 errors, 2 warnings, 5 info.
+  ----------------------------------------------------------------------------------------------------

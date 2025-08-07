@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv32_lu
+Version: T-2022.03-SP4
+Date   : Thu Feb 27 16:09:30 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32lvt_ss0p95v125c (File: /home1/PD07/AMuthuKKumar/VLSI_PD/Project/Macro/ref/DBs/saed32lvt_ss0p95v125c.db)
+
+Number of ports:                           71
+Number of nets:                           136
+Number of cells:                           98
+Number of combinational cells:             66
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                          7
+Number of references:                      20
+
+Combinational area:                164.431168
+Buf/Inv area:                       12.961344
+Noncombinational area:             162.652161
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   327.083329
+Total area:                 undefined
+1

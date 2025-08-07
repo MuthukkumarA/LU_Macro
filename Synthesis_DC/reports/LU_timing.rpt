@@ -1,0 +1,34 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_lu
+Version: T-2022.03-SP4
+Date   : Thu Feb 27 16:10:09 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32lvt_ss0p95v125c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: lu_output_reg[5]
+              (positive level-sensitive latch)
+  Endpoint: lu_output[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  lu_output_reg[5]/CLK (LATCHX1_LVT)       0.00       0.00 r
+  lu_output_reg[5]/Q (LATCHX1_LVT)         0.10       0.10 r
+  lu_output[5] (out)                       0.00 *     0.10 r
+  data arrival time                                   0.10
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
